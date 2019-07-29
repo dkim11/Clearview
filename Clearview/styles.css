@@ -2069,10 +2069,10 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 20px;
-  color: #DF6FEB;
+  color: #DA81DE;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;    
-  border-color: #DF6FEB;
+  border-color: #DA81DE;
   border-style: solid;
 }
 .more {
@@ -2087,8 +2087,8 @@ body {
   margin-top: 50px;
   border-radius: 3px;
   background: #fff;
-  border: 2px solid #FA70FF;
-  color: #FA70FF;
+  border: 2px solid #DA81DE;
+  color: #DA81DE;
   letter-spacing: 1px;
   text-shadow: 0;
   font-size: 14px;
@@ -2098,7 +2098,7 @@ body {
 } 
 #viewmore:hover {
   color: white;
-  background: #FA70FF;
+  background: #DA81DE;
 }
 #viewmore:active {
   letter-spacing: 2px;
