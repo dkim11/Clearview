@@ -7,7 +7,7 @@
 
 body {
   background-color: white;
-  font-family: 'Nunito', sans-serif;
+  font-family: sans-serif;
 }
 
 nav {
@@ -67,7 +67,7 @@ nav .cart span {
   opacity: 1;
   color: #fff;
   font-size: 18px;
-  font-family: 'Nunito', sans-serif;
+  font-family: sans-serif;
 }
 nav .cart span.updateQuantity:before, nav .cart span.updateQuantity:after {
   top: 0;
@@ -108,11 +108,11 @@ nav ul {
   float: left;
 }
 nav ul li {
-  font-weight: bold;
   display: inline-block;
   margin-left: 50px;
   color: #0b0b0b;
   font-size: 12px;
+  letter-spacing: 1px
 }
 .container {
   padding: 20px;
@@ -149,7 +149,7 @@ li a {
   border-top-left-radius: 4px;
 }
 
-.container .product h2 {
+.container .product {
   text-align: left;
   color: #fff;
   font-size: 14px;
@@ -202,7 +202,7 @@ li a {
   margin-left: 5px;
 }
 .container .product .btn:after {
-  font-family: 'simple-line-icons';
+  font-family: sans-serif;
   content: "\e095";
   transition: all .2s ease;
   position: absolute;
@@ -218,7 +218,7 @@ li a {
   cursor: pointer;
 }
 .container .product .quickview:before {
-  font-family: 'simple-line-icons';
+  font-family: sans-serif;
   content: "\e05d";
   margin-right: 3px;
 }
@@ -237,13 +237,12 @@ li a {
 .quickviewContainer {
   position: fixed;
   height: 100vh;
-  width: 600px;
+  width: 40%;
   background: white;
   top: 70px;
   right: -100%;
   transition: all .5s ease;
   padding: 30px;
-  color: #fff;
 }
 .quickviewContainer .close {
   height: 20px;
@@ -264,15 +263,6 @@ li a {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.quickviewContainer .headline {
-  margin-bottom: 30px;
-  font-size: 18px;
-  
-}
-.quickviewContainer .description {
-  font-size: 12px;
-  margin-bottom: 20px;
-}
 .quickviewContainer img {
   display: inline-block;
   border-radius: 4px;
@@ -292,4 +282,71 @@ li a {
   z-index: 10;
   overflow: hidden;
   display: none;
+}
+.headline {
+  color: black;
+  font-weight: 800;
+  font-size:25px;
+  margin-top: 3%;
+  margin-left: 4%
+}
+.login {
+  margin-top: 30px;
+  width: 300px;
+  margin-left: 4%
+}
+
+.app-title {
+    text-align: center;
+    color: #777;
+}
+
+.control-group {
+margin-bottom: 10px;
+}
+.username {
+    margin-bottom: 20px;
+}
+.password {
+    margin-bottom: 10%;
+}
+.user-label {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.pass-label {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+input {
+    padding-left: 16px;
+    padding-right: 16px;
+    letter-spacing: 0.9px;
+    border: 2px solid rgb(0,0,0,0.1);
+    border-radius: 1px;
+    font-size: 13px;
+    font-weight: 600;
+    height: 45px;
+    width: 350px;
+    transition: border .5s;
+}
+
+input:focus {
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+input:hover {
+    border: 2px solid black;
+}
+.action-button {
+    background-color: black;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border: none;
 }

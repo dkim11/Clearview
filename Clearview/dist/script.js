@@ -32,8 +32,6 @@ function quickView() {
 			quickview.addClass('active');
 		}
 	
-	quickViewHeader.text(header);
-	quickViewDescription.text(description);
 }
 
 function showMiniCart() {
