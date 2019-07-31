@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, flash, redirect, render_template, request, session, abort
 import flask
 import os
 
@@ -9,6 +9,7 @@ http://exploreflask.com/en/latest/static.html
 # Static parameters
 staticFiles = 'static'
 app = Flask(__name__, template_folder=staticFiles)
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 
 
@@ -21,9 +22,7 @@ def nonexistent_routes(error):
     return "<h1>404!!!!</h1>"
 
 
-@app.route('/', methods=['GET'])
-def root():
-    return render_template('index.html')
+
 
 
 @app.route('/example', methods=['GET'])
@@ -61,6 +60,39 @@ def example2():
       return ""
 
 
+@app.route('/', methods=['GET'])
+def home():
+    return render_template('index.html')
+
+
+@app.route('/login.html', methods=['GET'])
+def login():
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        return render_template('index.html')
+
+
+@app.route('/login', methods=['POST'])
+def do_admin_login():
+    if request.form['password'] == 'password' and request.form['username'] == 'admin':
+        session['logged_in'] = True
+        return render_template('login.html')
+    else:
+        flask.flash('wrong password!')
+        return "Wrong"
+        #return home()
+
+
+@app.route("/logout")
+def logout():
+    session['logged_in'] = False
+    return home()
+
+
+@app.route("/jsexample")
+def jsexample():
+    return render_template('jsexmaple.html')
 
 def main():
    try:

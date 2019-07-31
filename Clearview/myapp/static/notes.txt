@@ -1,2 +1,7 @@
 How static dir should be:
 http://exploreflask.com/en/latest/static.html
+
+
+Login:
+https://scotch.io/tutorials/authentication-and-authorization-with-flask-login
+https://pythonspot.com/login-authentication-with-flask/
