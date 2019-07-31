@@ -1,0 +1,2 @@
+How static dir should be:
+http://exploreflask.com/en/latest/static.html
