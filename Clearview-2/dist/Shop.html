@@ -5,8 +5,9 @@
   <title>Clearview</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
-<link rel="stylesheet" href="/Clearview/dist/style.css">
-    
+<link rel="stylesheet" href="/Clearview-2/dist/style.css">
+<script type="text/javascript" src="/Clearview-2/dist/login.js"></script>
+<script type="text/javascript" src="/Clearview-2/script.js"></script>
     
 <script>
 
@@ -28,7 +29,7 @@ $(document).ready(function()){
   </div>
   <ul>
     
-    <li><a href="/Clearview/Clearview.html" class="link_navlogo w--current">Clearview</a></li>
+    <li><a href="/Clearview-2/Clearview.html" class="link_navlogo w--current">Clearview</a></li>
        
   </ul>
     
@@ -72,7 +73,7 @@ $(document).ready(function()){
     <h2 class='header'>4</h2>
     <p class='description'></p>
     <p class='price'>$231</p>
-    <div class='btn'>Add to cart</div>
+     <div class='btn'>Add to cart</div>
   </div>
   <div class='product'>
     <img src='https://placeimg.com/200/100'>
@@ -108,7 +109,7 @@ $(document).ready(function()){
     
   <h2 class='headline'>SIGN IN</h2>
     
-  <form action="/login" method="POST">
+  <form name="loginform" action="Shop.html" onSubmit="return validateForm();">
       
       <div class="login">
       <div class="login-screen">
@@ -123,7 +124,7 @@ $(document).ready(function()){
     
     <div class="username">
         
-        <input type="text" class="login-field" value="">
+        <input type="text" name="username" class="login-field" value="">
         <label class="login-field-icon fui-user" for="login-name"></label>
     
     </div>
@@ -136,7 +137,7 @@ $(document).ready(function()){
     
     <div class="password">
         
-        <input type="password" class="login-field" value="">
+        <input type="password" name="password" class="login-field" value="">
         <label class="login-field-icon fui-lock" for="login-pass"></label>
     
     </div>    
@@ -148,7 +149,7 @@ $(document).ready(function()){
 </div>
 </div>
 
-<button class="action-button btnSubmit tagClick">
+<button class="action-button btnSubmit tagClick" type="submit" onclick="validation">
     
     <span>Sign In</span>
     
@@ -158,7 +159,21 @@ $(document).ready(function()){
 
 </form>
     
-    
+<script>
+    function validateForm() {
+        var un = document.loginform.username.value;
+        var pw = document.loginform.password.value;
+        var username = "username"; 
+        var password = "password";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+  }
+</script>
   
     
 </div>
