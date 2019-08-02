@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Clearview</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
+<link rel="stylesheet" href="/Clearview-2/dist/style2.css">
+<script type="text/javascript" src="/Clearview-2/dist/login.js"></script>
+<script type="text/javascript" src="/Clearview-2/dist/script.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+.mySlides {display:none;}
+</style>
+    
+<script>
+
+$(document).ready(function()){
+    $('.quickview').click(function()) {
+        $('.preventClick').toggle("slide");                    
+    }              
+}
+    
+</script>
+
+    
+</head>
+    
+<body>    
+    
+<nav>
+  <div class='mini'>
+    <p class='products'>Empty</p>
+    <p class='names'></p>
+    <p class='miniprice'></p>
+  </div>
+  <ul>
+    
+    <li><a href="/Clearview-2/Clearview.html" class="link_navlogo w--current">Clearview</a></li>
+       
+  </ul>
+
+    
+  <div class='quickview icon-user'>
+  </div>    
+    
+    
+  <div class='cart icon-basket'>
+    <span class='number'>1</span>
+  </div>
+    
+    <div class="shop-home">
+    <a href="Shop.html">
+    <img src="/Clearview-2/images/baseline-keyboard_arrow_up-24px.svg">
+    </a>
+    </div>
+    
+</nav>
+      </div>
+    </div>
+
+<div class="container">
+    
+    <div class="column-xs-12">
+    
+    
+    
+    </div>
+    
+    <div class="grid product">
+      <div class="column-xs-12 column-md-7">
+        <div class="product-gallery">
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="/Clearview-2/images/essentials-8-w.jpg">
+            <img class="mySlides" src="/Clearview-2/images/foundation2.jpg">
+            <img class="mySlides" src="/Clearview-2/images/foundation3.jpg">
+            <img class="mySlides" src="/Clearview-2/images/foundation4.jpg">
+            <img class="mySlides" src="/Clearview-2/images/foundation5.jpg">
+            <button class="w3-button w3-black w3-display left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display right" onclick="plusDivs(1)">&#10095;</button>
+              
+              
+              
+          </div>
+            
+            
+            <script>
+                
+            var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+            </script>
+            
+            
+            
+            
+            
+            
+        </div>
+      </div>
+      <div class="column-xs-12 column-md-5">
+        <h1>The Essentials</h1>
+        <h2>$259</h2>
+        <div class="description">
+          <p>
+              Our most popular system. For good reason.
+It’s got a motion sensor to catch anyone
+walking through a main passage, plus entry 
+sensors to cover all your main entry points.
+            
+          </p>
+        </div>
+        <button class="add-to-cart">Add To Cart</button>
+      </div>
+    </div>
+    <div class="grid related-products">
+      <div class="column-xs-12">
+        <h3>You may also like</h3>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <a href="/Clearview-2/dist/foundation.html">
+        <img src="/Clearview-2/images/foundation-4-w.jpg">
+        <h4>The Foundation</h4>
+        <p class="price">$229</p>
+        </a>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <a href="/Clearview-2/dist/haven.html">
+        <img src="/Clearview-2/images/haven-14-w.jpg">
+        <h4>The Haven</h4>
+        <p class="price">$489</p>
+        </a>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <a href="/Clearview-2/dist/knox.html">
+        <img src="/Clearview-2/images/knox-13-w.jpg">
+        <h4>The Knox</h4>
+        <p class="price">$449</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='quickviewContainer'>
+    
+    
+  <div class='close'></div>
+    
+  <h2 class='headline'>SIGN IN</h2>
+    
+  <form name="loginform" action="Shop.html" onSubmit="return validateForm();">
+      
+      <div class="login">
+      <div class="login-screen">
+      <div class="app-title">
+      </div>
+          
+<div class="login-form">
+    
+<div class="control-group">
+    
+        <div class="user-label">Username</div>
+    
+    <div class="username">
+        
+        <input type="text" name="username" class="login-field" value="">
+        <label class="login-field-icon fui-user" for="login-name"></label>
+    
+    </div>
+        
+</div>
+    
+<div class="control-group">
+    
+        <div class="pass-label">Password</div>
+    
+    <div class="password">
+        
+        <input type="password" name="password" class="login-field" value="">
+        <label class="login-field-icon fui-lock" for="login-pass"></label>
+    
+    </div>    
+        
+</div>
+   
+
+
+</div>
+</div>
+
+<button class="action-button btnSubmit tagClick" type="submit" onclick="validation">
+    
+    <span>Sign In</span>
+    
+</button>      
+
+</div>
+
+
+</main>
+</body>
+
+<script>
+    function validateForm() {
+        var un = document.loginform.username.value;
+        var pw = document.loginform.password.value;
+        var username = "username"; 
+        var password = "password";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+  }
+</script>
+  
+    
+<!-- partial -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script  src="./script.js"></script>

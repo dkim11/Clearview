@@ -164,19 +164,22 @@ li a {
 		line-height:32px
 	}
 	.link_navlogo.w--current {
-		font-size:19px
+		font-size:19px;
+        color: #660C6B;;
 	}
 .container .product {
   position: relative;
   overflow: hidden;
   width: 200px;
-  height: 240px;
+  height: 250px;
   display: inline-block;
   border-radius: 4px;
   background-color: #D27BD5;
   margin: 20px;
   padding: 15px;
   transition: transform .3s;
+  cursor: pointer;
+  text-decoration: none;
 }
 .container .product img {
   position: relative;
@@ -192,6 +195,7 @@ li a {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 4px;
+  text-decoration: none;
 }
 .container .product .description {
   text-align: left;
@@ -388,3 +392,8 @@ input:hover {
     border: none;
     margin-top: 10px;
 }
+
+
+
+
+
